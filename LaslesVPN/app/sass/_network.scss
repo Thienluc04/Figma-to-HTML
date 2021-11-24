@@ -1,0 +1,23 @@
+.network {
+    &-container {
+        text-align: center;
+    }
+    &-head {
+        text-align: center; 
+        margin-bottom: 155px;
+        .heading {
+            max-width: 383px;  
+            margin: 0 auto;
+        }
+        .description {
+            max-width: 555px;
+            margin: 0 auto;
+            span {
+                font-weight: 500;
+            }
+        }
+    }
+    &-img {
+        margin-bottom: 35px;
+    }
+}

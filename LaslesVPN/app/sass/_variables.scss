@@ -1,0 +1,12 @@
+$primary-color: #F53838;
+$heading-color: #0B132A;
+$text-color: #4F5665;
+$gray-color: #DDE0E4;
+$font: 'Rubik';
+
+
+@mixin flex-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

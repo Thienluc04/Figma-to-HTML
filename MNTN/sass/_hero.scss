@@ -1,0 +1,18 @@
+.hero {
+    margin-bottom: 100px;
+    .container {
+        display: flex;
+        align-items: center;
+        gap: 0 77px;
+    }
+
+    &__content {
+        .desc {
+            margin-bottom: 50px;
+        }
+        .btn-wrap {
+            display: flex;
+            gap: 0 40px;
+        }
+    }
+}

@@ -1,0 +1,129 @@
+.customer {
+    margin-bottom: 85px;
+
+    &-head {
+        text-align: center;
+        margin-bottom: 60px;
+        .heading {
+            max-width: 447px;
+            margin: 0 auto;
+        }
+        .description {
+            max-width: 555px;
+            margin: 0 auto;
+        }
+    }
+
+    &-list {
+        position: relative;
+        margin-bottom: 60px;
+    }
+
+    &-item {
+        border: 2px solid #DDDDDD;
+        border-radius: 10px;
+        padding: 30px;
+        min-height: 294px;
+        &-head {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-infor, &-rate {
+            display: flex;
+            align-items: center;
+        }
+        
+        &-rate {
+            &-number {
+                font-size: 1.6rem;
+                line-height: 30px;
+                color: $heading-color;
+                margin-right: 10px;
+            }
+        }
+
+        &-comment {
+            font-size: 1.6rem;
+            line-height: 30px;
+            color: $heading-color;
+            margin-top: 20px;
+        }
+    }
+
+    &-infor-content {
+        margin-left: 20px;
+        .heading {
+            font-size: 1.8rem;
+            line-height: 30px;
+            padding-bottom: 0;
+        }
+        .desc {
+            font-size: 1.4rem;
+            line-height: 30px;
+        }
+    }
+}
+
+// Slick Slider
+.slick-current {
+    border: 2px solid #F53838;
+}
+
+.slick-track {
+    display: flex !important;
+    gap: 0 50px !important;
+
+}
+
+.slick-slide {
+    min-height: 294px !important;
+}
+
+.slick-dots {
+    display: flex !important;
+    gap: 0 15px;
+    list-style-type: none;
+    margin-top: 78px;
+    button {
+        width: 15px ;
+        height: 15px ;
+        font-size: 0;
+        border-radius: 100%;
+        border: none;
+        background-color: $gray-color;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+}
+
+.slick-active {
+    button {
+        width: 45px;
+        background-color: $primary-color;
+        border-radius: 30px;
+    }
+}
+
+.slick-arrow {
+    position: absolute;
+    right: 0;
+    bottom: -19px;
+    border: 2px solid $primary-color;
+    cursor: pointer;
+}
+
+.slick-prev {
+    width: 60px;
+    height: 60px;
+    border-radius: 100rem;
+    margin-right: 80px;
+    background-color: #fff;
+}
+
+.slick-next {
+    width: 60px;
+    height: 60px;
+    border-radius: 100rem;
+    background-color: $primary-color;
+}

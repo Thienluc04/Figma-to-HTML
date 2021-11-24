@@ -1,0 +1,42 @@
+.header {
+    padding-top: 50px;
+    padding-bottom: 90px;
+    font-size: 1.6rem;
+    &-container {
+        @include flex-header;
+    }
+
+    &-auth {
+        gap: 0 35px;
+        display: flex;
+        align-items: center;
+        
+        & a {
+            display: block;
+            text-decoration: none;
+            font-weight: 500;
+        }
+    }
+
+    &-signin {
+        color: $heading-color;
+
+    }
+
+    &-signup {
+        padding: 13px 45px;
+        border: 1px solid #F53855;
+        border-radius: 50px;
+        color: #F53855;
+    }
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    gap: 0 44px;
+    .navbar-item-link {
+        color: $text-color;
+        text-decoration: none;
+    }
+}

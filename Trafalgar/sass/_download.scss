@@ -1,0 +1,18 @@
+.download {
+    position: relative;
+    margin-bottom: 250px;
+    &::before {
+        position: absolute;
+        content: "";
+        background: url(../img/element.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 115px;
+        width: 131px;
+        right: -35px;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+    }
+}

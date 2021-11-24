@@ -1,0 +1,41 @@
+.about {
+    margin-bottom: 95px;
+    &-container {
+        padding: 37px 0;
+        border-radius: 10px;
+        background-color: #fff;
+        display: flex;
+        min-height: 200px;
+        position: relative;
+        box-shadow: 0 42px 114px 0 rgba(13, 16, 37, 0.068);
+        border-radius: 10px;
+    }
+    &-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: 2px solid #EEEFF2;
+        flex: 1;
+        &-img {
+            margin-right: 36px;
+        }
+        &-wrap {
+            gap: 5px 0;
+        }
+        &-heading {
+            font-size: 2.5rem;
+            font-weight: 700;
+            line-height: 30px;
+            color: $heading-color;
+        }
+        &-name {
+            font-size: 2rem;
+            line-height: 30px;
+            color: $text-color;
+        }
+    }
+    &-item:last-child {
+        border-right: none;
+        
+    }
+}

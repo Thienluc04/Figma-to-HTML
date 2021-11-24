@@ -1,0 +1,122 @@
+.wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.wrapper::before {
+    content: "";
+    position: absolute;
+    background: url(../img/element.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 115px;
+    width: 131px;
+    top: 160px;
+    left: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1247px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.heading {
+    color: $heading-color;
+    font-size: 3.6rem;
+    font-weight: bold;
+    line-height: 56px;
+}
+
+.heading-center {
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+.line {
+    width: 56px;
+    height: 2px;
+    background-color: #000;
+    border-radius: 5px;
+    margin-bottom: 31px;
+    margin-top: 26px;
+}
+
+.line-center {
+    margin: 0 auto;
+    width: 56px;
+    height: 2px;
+    background-color: #000;
+    border-radius: 5px;
+    margin-bottom: 33px;
+}
+
+.description {
+    font-size: 1.8rem;
+    color: $text-color;
+    line-height: 30px;
+    font-weight: 300;
+    margin-bottom: 37px;
+}
+
+.description-center {
+    font-size: 1.8rem;
+    color: $text-color;
+    line-height: 30px;
+    font-weight: 300;
+    margin-bottom: 37px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    display: block;
+    border: none;
+    height: 60px;
+    line-height: 60px;
+    width: 200px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 55px;
+    box-sizing: border-box;
+}
+
+.button--primary {
+    background-color: $primary-color;
+    color: #fff;
+}
+
+.button--outline {
+    border: 2px solid $primary-color;
+    background-color: #fff;
+    color: $primary-color;
+}
+
+button {
+    background-color: none;
+    border: none;
+}
+
+ul {
+    list-style: none;
+}
+
+// Menu mobile
+.menu__btn {
+    display: none;
+    svg {
+        width: 40px;
+        height: 40px;
+        fill: $primary-color !important;
+    }
+}

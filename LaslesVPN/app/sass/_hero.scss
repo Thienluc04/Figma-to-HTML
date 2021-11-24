@@ -1,0 +1,39 @@
+
+.hero {
+    margin-bottom: 144px;
+    height: 100%;
+    &-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0 40px;
+        position: relative;
+    }
+    &-content {
+        max-width: 555px;
+        width: 100%;
+    }
+    &-heading {
+        color: $heading-color;
+        line-height: calc(70 / 50);
+        font-size: 5rem;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    &-image {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(40px,-50%);
+    }
+    &-desc {
+        font-size: 1.6rem;
+        color: $text-color;
+        line-height: 30px;
+        margin-bottom: 50px;
+        span{
+            font-weight: 500;
+        }
+    }
+    
+}

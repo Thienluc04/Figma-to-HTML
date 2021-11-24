@@ -1,0 +1,65 @@
+.wrapper {
+    max-width: 1495px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+main {
+    position: relative;
+}
+
+.button {
+    border-radius: 50px;
+    padding: 13px 45px;
+    font-family: $font;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border: none;
+    text-transform: capitalize;
+    &--primary {
+        background-color: $primary-color;
+        color: #fff;
+        box-shadow: 0 17px 54px rgba(245, 56, 56, 0.35);
+    }
+    &--outline {
+        background-color: transparent;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+    }
+    &--rounded {
+        background-color: $primary-color;
+        color: #fff;
+        font-weight: 700;
+        line-height: 25px;
+        border-radius: 10px;
+        padding: 17px 77px;
+        position: relative;
+        box-shadow: 0 25px 54px rgba(245, 56, 56, 0.35);
+    }
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: $heading-color;
+}
+
+.heading {
+    font-size: 3.5rem;
+    line-height: 50px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.description {
+    font-size: 1.6rem;
+    line-height: 30px;
+    color: $text-color;
+}

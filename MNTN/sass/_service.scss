@@ -1,0 +1,19 @@
+.service {
+    margin-bottom: 150px;
+    .container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 0 74px;
+    }
+    &-item {
+        text-align: center;
+        .heading {
+            font-size: 24px;
+            line-height: 36px;
+        }
+        .desc {
+            font-size: 1.6rem;
+            line-height: 24px;
+        }
+    }
+}

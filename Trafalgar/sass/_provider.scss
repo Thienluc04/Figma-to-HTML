@@ -1,0 +1,12 @@
+.provider {
+    margin-bottom: 230px;
+    .container {
+        display: flex;
+        gap: 0 137px;
+    }
+    &__content {
+        .description {
+            margin-bottom: 37px;
+        }
+    }
+}
