@@ -1,0 +1,59 @@
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.heading-big {
+    color: $primary-color;
+    font-size: 36px;
+    line-height: 50px;
+    font-weight: 900;
+}
+
+.heading {
+    font-weight: 800;
+    font-size: 2.4rem;
+    line-height: 32px;
+    color: $primary-color;
+}
+
+.desc {
+    color: $text-color;
+    font-size: 1.8rem;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.button {
+    border: none;
+    outline: none;
+    background-color: none;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.button--primary {
+    background-color: $btn-color;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 21px;
+    padding: 10px 38px;
+    color: #fff;
+}
+
+.button--outline {
+    background-color: #fff;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 24px;
+    padding: 10px 38px;
+    border: 2px solid $btn-color;
+    color: $btn-color;
+}

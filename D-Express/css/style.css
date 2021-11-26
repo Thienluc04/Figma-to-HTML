@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: "Avenir LT Std", sans-serif;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.heading-big {
+  color: #043CAA;
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 900;
+}
+
+.heading {
+  font-weight: 800;
+  font-size: 2.4rem;
+  line-height: 32px;
+  color: #043CAA;
+}
+
+.desc {
+  color: #333333;
+  font-size: 1.8rem;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.button {
+  border: none;
+  outline: none;
+  background-color: none;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.button--primary {
+  background-color: #1BC768;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 21px;
+  padding: 10px 38px;
+  color: #fff;
+}
+
+.button--outline {
+  background-color: #fff;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 24px;
+  padding: 10px 38px;
+  border: 2px solid #1BC768;
+  color: #1BC768;
+}
+
+.header {
+  background: linear-gradient(96.22deg, #043CAA -0.66%, rgba(4, 60, 170, 0.86) 44.05%, rgba(4, 60, 170, 0) 100%), url(../img/header-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 20px;
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 104px;
+}
+.header-top .navbar {
+  display: flex;
+  gap: 0 48px;
+  list-style-type: none;
+}
+.header-top .navbar .navbar-item-link {
+  font-size: 1.6rem;
+  line-height: 21px;
+  text-decoration: none;
+  color: #fff;
+}
+.header-hero {
+  display: flex;
+  align-items: center;
+}
+.header-hero .heading-white {
+  color: #043CAA;
+  font-size: 48px;
+  line-height: 65px;
+  font-weight: 900;
+  max-width: 520px;
+  color: #fff;
+  margin-bottom: 23px;
+}
+.header-hero .desc-white {
+  max-width: 505px;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 25px;
+  color: #fff;
+}
+.header-hero .hero-img {
+  transform: translateX(262px);
+}
+
+/*# sourceMappingURL=style.css.map */
