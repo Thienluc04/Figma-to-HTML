@@ -1,0 +1,44 @@
+.benefits {
+    .container {
+
+        .lines {
+            margin-bottom: 10px;
+        }
+
+        .benefits-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0 140px;
+        }
+    }
+
+
+    &__content {
+        .desc-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 16px 0;
+            .desc {
+                img {
+                    margin-right: 9px;
+                }
+            }
+        }
+        
+        .button {
+            display: flex;
+            margin-top: 30px;
+            align-items: center;
+            box-sizing: border-box;
+            img {
+                margin-left: 10px;
+
+            }
+        }
+
+        &-link {
+            max-width: 238px;
+        }
+    }
+}

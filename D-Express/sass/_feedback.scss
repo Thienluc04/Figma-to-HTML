@@ -1,0 +1,11 @@
+.feedback {
+    margin-top: 24px;
+    margin-bottom: 138px;
+    display: flex;
+    gap: 0 187px;
+    .container {
+        .feedback__content {
+            max-width: 382px;
+        }
+    }
+}

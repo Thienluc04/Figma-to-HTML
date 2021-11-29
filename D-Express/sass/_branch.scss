@@ -1,0 +1,17 @@
+.branch {
+    margin-bottom: 114px;
+    .container {
+
+        .lines {
+            margin-bottom: 56px;
+        }
+
+    }
+
+    &-images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0 118px;
+    }
+}
