@@ -6,6 +6,40 @@
     .container {
         .feedback__content {
             max-width: 382px;
+            .slider-item {
+                margin-top: 48px;
+                margin-bottom: 40px;
+                .desc {
+                    color: #7A7A7A;
+                    line-height: 34px;
+                    margin-bottom: 18px;
+                }
+                .name {
+                    font-size: 1.8rem;
+                    color: $primary-color;
+                }
+            }
+        }
+
+        .dot-item {
+            display: flex !important;
+            gap: 0 10px;
+            
+            .slick-active {
+                button {
+                    background-color: #1BC768;
+                }
+            }
+            button {
+                width: 10px;
+                height: 10px;
+                background-color: #C4C4C4;
+                border-radius: 50%;
+                font-size: 0;
+                border: none;
+                outline: none;
+                cursor: pointer;
+            }
         }
     }
 }
