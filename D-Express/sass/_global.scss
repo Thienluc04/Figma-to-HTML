@@ -10,6 +10,24 @@
     padding: 0 15px;
 }
 
+.heading-white {
+    font-size: 48px;
+    line-height: 65px;
+    font-weight: 900;
+    max-width: 520px;
+    color: #fff;
+    margin-bottom: 23px;
+}
+
+.desc-white {
+    max-width: 505px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 25px;
+    color: #fff;
+    margin-bottom: 44px;
+}
+
 .heading-big {
     color: $primary-color;
     font-size: 36px;
