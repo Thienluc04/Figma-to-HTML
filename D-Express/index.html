@@ -13,6 +13,8 @@
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
 
 </head>
 <body>
@@ -43,6 +45,36 @@
                         </li>
                     </ul>
                     <a href="" class="button button--primary">Login</a>
+                    <label class="menu-btn" for="menu-mobile-input">
+                        <i class='bx bx-menu-alt-right' ></i>
+                    </label>
+                    <input hidden type="checkbox" class="menu__input" name="" id="menu-mobile-input">
+                    <label class="menu-mobile-overlay" for="menu-mobile-input"></label>
+                    <ul data-aos="fade-right" class="nav__mobile">
+                        <h1 class="close-btn">Close</h1>
+                        <li class="nav__mobile-item">
+                            <a href="" class="nav__mobile-item-link">
+                                Login
+                            </a>
+                        </li>
+                        <li class="nav__mobile-item">
+                            <a href="" class="nav__mobile-item-link">
+
+                                Refill Prescription
+                            </a>
+                        </li>
+                        <li class="nav__mobile-item">
+                            <a href="" class="nav__mobile-item-link">
+                                Buy Medicine
+                            </a>
+                        </li>
+                        <li class="nav__mobile-item">
+                            <a href="" class="nav__mobile-item-link">
+                                Contact a pharmacist
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="bg"></div>
                 </div>
 
                 <div class="header-hero">
@@ -197,7 +229,7 @@
         <section class="feedback">
             <img data-aos="zoom-in" srcset="./img/feedback.jpg 2x" alt="">
             <div class="container">
-                <div data-aos="fade-left" class="feedback__content">
+                <div class="feedback__content">
                     <h1 class="heading-big" data-aos="fade-down">
                         What Our Clients Say
                     </h1>
@@ -350,6 +382,7 @@
   type="text/javascript"
   src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
 ></script>
+<script src="./js/app.js"></script>
 <script>
     $('.feedback-slider').slick({
     slidesToShow: 1,
@@ -363,7 +396,7 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init({
-        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        disable: 'phone', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
         startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
         initClassName: 'aos-init', // class applied after initialization
         animatedClassName: 'aos-animate', // class applied on animation

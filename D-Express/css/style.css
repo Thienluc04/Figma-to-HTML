@@ -130,10 +130,14 @@ a {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 104px;
+  position: relative;
 }
 .header-top .logo .heading-white {
   font-size: 2.4rem;
   line-height: 32px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .header-top .navbar {
   display: flex;
@@ -167,6 +171,92 @@ a {
   border: 1px solid #fff;
   padding: 10px 35px;
   border-radius: 50px;
+}
+.header .menu-mobile-overlay {
+  display: none;
+}
+.header .menu-btn {
+  display: none;
+  z-index: 1;
+}
+.header .menu-btn i {
+  font-size: 4rem;
+  color: #fff;
+}
+.header .bg {
+  visibility: hidden;
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  background-color: #043CAA;
+  border-radius: 50%;
+  z-index: 0;
+  right: 0;
+  transform: scale(0);
+}
+.header .bg.is-active {
+  transition: all 0.5s linear;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  visibility: unset;
+  transform: scale(100);
+}
+.header .nav__mobile {
+  display: none;
+  position: fixed;
+  right: 1%;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+  overflow: hidden;
+}
+.header .nav__mobile .close-btn {
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 400;
+  font-style: italic;
+  border: 2px solid #fff;
+  padding: 10px;
+  border-radius: 50px;
+}
+.header .nav__mobile .close-btn:hover {
+  background: #fff;
+  color: #333333;
+}
+.header .nav__mobile.full {
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  border-radius: 0;
+}
+.header .nav__mobile.full:not(.close-btn) {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50%;
+  text-align: center;
+  gap: 30px 0;
+}
+.header .nav__mobile.full:not(.close-btn) a {
+  font-size: 1.8rem;
+  color: #fff;
+}
+.header .hidden {
+  display: none;
+}
+.header .show {
+  display: block;
+}
+
+.overflow {
+  overflow: hidden;
 }
 
 .branch {
@@ -356,5 +446,139 @@ a {
   font-weight: 400;
   padding-bottom: 18px;
 }
+
+@media (max-width: 1295px) {
+  .hero-img {
+    width: 400px;
+  }
+}
+@media (max-width: 1224px) {
+  .feedback img {
+    display: none;
+  }
+
+  .hero-img {
+    display: none;
+  }
+
+  .header-hero {
+    padding-bottom: 50px;
+  }
+
+  .footer-top {
+    gap: 50px 0;
+    flex-direction: column;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px 0;
+    text-align: center;
+  }
+
+  .footer-bottom__grid {
+    grid-template-columns: 210px;
+    gap: 50px 0;
+    text-align: center;
+  }
+
+  .benefits-group img {
+    display: none;
+  }
+  .benefits-group .benefits__content {
+    width: 342px;
+    margin-top: 50px;
+  }
+
+  .feedback__content {
+    margin-top: 50px;
+  }
+}
+/* Tablet and Mobile */
+@media (max-width: 1023px) {
+  .header .navbar {
+    display: none;
+  }
+  .header .button--primary {
+    display: none;
+  }
+  .header .menu-btn {
+    display: block;
+  }
+
+  .hero__content .heading-white {
+    font-size: 2rem;
+    line-height: 20px;
+  }
+  .hero__content .desc-white {
+    font-size: 1.6rem;
+    line-height: 20px;
+  }
+  .hero__content .hero__content-list {
+    display: none;
+  }
+
+  .branch-images {
+    flex-direction: column;
+  }
+
+  .input {
+    display: none !important;
+  }
+
+  .name {
+    display: none;
+  }
+
+  .benefits__content {
+    text-align: center;
+  }
+  .benefits__content .heading {
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  .benefits__content .button {
+    margin-top: 30px;
+    max-width: 238px;
+    width: 100%;
+    justify-content: center;
+    box-sizing: unset;
+  }
+
+  .feedback-slider {
+    text-align: center;
+  }
+
+  .dot-item {
+    justify-content: center;
+  }
+
+  .footer-top__content .heading-white {
+    text-align: center;
+  }
+  .footer-top__content .desc-white {
+    text-align: center;
+  }
+
+  .footer-top {
+    padding-bottom: 60px;
+  }
+
+  .feedback__content .heading-big {
+    font-size: 3rem;
+  }
+
+  .branch-images {
+    gap: 40px 0;
+  }
+
+  .feedback__content {
+    max-width: 100%;
+    width: 330px;
+  }
+}
+/* Tablet */
+/* Mobile */
 
 /*# sourceMappingURL=style.css.map */

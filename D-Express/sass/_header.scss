@@ -9,10 +9,14 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: 104px;
+        position: relative;
         .logo {
             .heading-white {
                 font-size: 2.4rem;
                 line-height: 32px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
             }
         }
 
@@ -61,4 +65,100 @@
             }
         }
     }
+
+    .menu-mobile-overlay {
+        display: none;
+    }
+
+    .menu-btn {
+        display: none;
+        z-index: 1;
+        i {
+            font-size: 4rem;
+            color: #fff;
+        }
+    }
+
+    .bg {
+        visibility: hidden;
+        position: fixed;
+        height: 50px;
+        width: 50px;
+        background-color: $primary-color;
+        border-radius: 50%;
+        z-index: 0;
+        right: 0;
+        transform: scale(0);
+        &.is-active {
+            transition: all 0.5s linear;
+            display: block;
+            width: 100%;
+            height: 100%;
+            z-index: 10;
+            visibility: unset;
+            transform: scale(100);
+
+        }
+    }
+
+    .nav__mobile {
+        display: none;
+        position: fixed;
+        right: 1%;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        z-index: 1;
+        overflow: hidden;
+        .close-btn {
+            position: absolute;
+            right: 10%;
+            top: 10%;
+            font-size: 1.6rem;
+            color: #fff;
+            font-weight: 400;
+            font-style: italic;
+            border: 2px solid #fff;
+            padding: 10px;
+            border-radius: 50px;
+        }
+
+        .close-btn:hover {
+            background: #fff;
+            color: $text-color;
+        }
+    }
+
+    .nav__mobile.full {
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 11;
+        border-radius: 0;
+    }
+
+    .nav__mobile.full:not(.close-btn) {
+        display: flex;
+        flex-direction: column;
+        padding-top: 50%;
+        text-align: center;
+        gap: 30px 0;
+        a {
+            font-size: 1.8rem;
+            color: #fff;
+        }
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+}
+
+.overflow {
+    overflow: hidden;
 }
