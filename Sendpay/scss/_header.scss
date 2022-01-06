@@ -1,0 +1,41 @@
+.header {
+    margin-top: 20px;
+    margin-bottom: 80px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        &-text {
+            font-size: 600;
+            font-size: 25px;
+            color: $primary-color;
+        }
+    }
+
+    .navbar {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        &-item-link {
+            font-weight: 700;
+        }
+    }
+    .accout {
+        display: flex;
+        align-items: center;
+        .navbar-item-link {
+            padding-right: 32px;
+        }
+
+        .button--outline {
+            margin-right: 14px;
+        }
+    }
+}

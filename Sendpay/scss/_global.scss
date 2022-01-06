@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font;
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1132px;
+    margin: 0 auto;
+}
+
+.button {
+    padding: 10px 24px;
+    font-weight: 700;
+}
+
+.button--outline {
+    border: 1.5px solid $gray-color;
+}
+
+.button--primary {
+    border: 1.5px solid $gray-color;
+    background-color: $primary-color;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.heading {
+    font-weight: 600;
+    font-size: 44px;
+    color: #000;
+}
+
+.desc {
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+}
+
+.line {
+    width:  52px;
+    border: 3px solid #C4C4C4;
+    box-sizing: border-box;
+}

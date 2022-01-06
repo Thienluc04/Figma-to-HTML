@@ -1,0 +1,50 @@
+.currency {
+    background-color: #FFFCFC;
+    position: relative;
+    padding-top: 110px;
+    padding-bottom: 156px;
+    margin-bottom: 115px;
+    .circle {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        z-index: 1;
+    }
+    .rectangle {
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        z-index: 1;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        gap: 196px;
+        flex-wrap: wrap;
+        z-index: 2;
+    }
+
+    &-img {
+        z-index: 2;
+    }
+
+    &__content {
+        max-width: 422px;
+        .heading {
+            font-size: 40px;
+            margin-bottom: 6px;
+        }
+        .line {
+            margin-bottom: 36px;
+        }
+        .desc {
+            margin-bottom: 16px;
+        }
+        .more {
+            font-size: 22px;
+            font-weight: 600;
+            color: $primary-color;
+        }
+    }
+}

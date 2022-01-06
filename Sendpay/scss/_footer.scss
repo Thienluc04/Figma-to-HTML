@@ -1,0 +1,94 @@
+.footer {
+    margin-bottom: 108px;
+    .container {
+        display: flex;
+    }
+
+    &__content {
+        margin-right: 106px;
+        .logo {
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 54px;
+            gap: 14px;
+            &-text {
+                color: $primary-color;
+                font-weight: 600;
+                font-size: 25px;
+            }
+        }
+        .desc {
+            max-width: 318px;
+            color: $gray-color;
+            font-weight: 600;
+            font-size: 18px;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        gap: 80px;
+        margin-right: 76px;
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        &-link.first {
+            color: #8B8B8B;
+        }
+
+        &-link {
+            font-weight: 600;
+            font-size: 18px;
+            color:  #000;
+        }
+            
+    }
+
+    &__contact {
+        padding: 30px 20px;
+        background-color: $primary-color;
+        border-radius: 25px;
+        height: 300px;
+        .heading {
+            color: #fff;
+            font-size: 22px;
+            font-weight: 800;
+            margin-bottom: 30px;
+        }
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        &-item {
+            display: flex;
+            gap: 36px;
+            align-items: center;
+            .social-gitlab {
+                height: 57px;
+                width: 57px;
+                background-color: #C4C4C4;
+                background-image: url(../img/gitlab.png);
+                background-size: cover;
+                border-radius: 50px;
+            }
+            .social-twitter {
+                height: 57px;
+                width: 57px;
+                background-color: #C4C4C4;
+                background-image: url(../img/twitter.png);
+                background-size: cover;
+                border-radius: 50px;
+            }
+        }
+        &-link:first-child {
+            margin-bottom: 29px;
+        }
+        &-link {
+            color: #fff;
+            font-size: 22px;
+        }
+    }
+}

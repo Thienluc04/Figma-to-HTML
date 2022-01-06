@@ -1,0 +1,51 @@
+.feedback {
+    margin-bottom: 84px;
+    .container {
+        display: flex;
+    }
+
+    .swiper {
+        width: 100%;
+        padding: 62px 20px !important;
+        background-color: #6C63FF;
+    }
+    
+    .swiper-slide {
+        border-radius: 15px;
+        font-size: 18px;
+        background: #fff;
+        padding-left: 26px;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        box-sizing: border-box;
+        width: 100%;
+
+        .desc {
+            font-weight: 500;
+            font-size: 20px;
+            font-style: italic;
+            text-align: left;
+            height: 175px;
+            max-width: 218px;
+            line-height: 35px;
+        }
+    }
+
+    &-user {
+        margin-top: 25px;
+        display: flex;
+        gap: 18px;
+        align-items: center;
+        &__content {
+            .name {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 35px;
+            }
+            .major {
+                color: #787777;
+                font-weight: 600;
+            }
+        }
+    }
+}
